@@ -1,0 +1,9 @@
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\Util\bin\Debug\Util.dll
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\Util\bin\Debug\Util.pdb
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\Util\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\Util\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\Util\obj\Debug\Util.csproj.CopyComplete
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\Util\obj\Debug\Util.dll
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\Util\obj\Debug\Util.pdb

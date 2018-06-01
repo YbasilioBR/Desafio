@@ -1,12 +1,16 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 
 namespace Util.Classes
 {
-    public class Ticket
+    class Ticket
     {
         [JsonProperty("TicketID")]
         public long TicketId { get; set; }
@@ -30,19 +34,34 @@ namespace Util.Classes
         public DateTimeOffset DateUpdate { get; set; }
 
         [JsonProperty("Interactions")]
-        public object Interactions { get; set; }
+        public List<object> Interactions { get; set; }
+
+        [JsonProperty("Priority")]
+        public string Priority { get; set; }
 
 
         public List<Ticket> RetornaTickets()
         {
             var webClient = new WebClient();
-            var json = webClient.DownloadString(@"..\tickets.json");
+            var json = webClient.DownloadString(@"..\..\..\..\tickets.json");
             var result = JsonConvert.DeserializeObject<List<Ticket>>(json);
 
             return result;
 
         }
 
+        public bool GravaTickets(List<Ticket> objTicket)
+        {
+            var json = JsonConvert.SerializeObject(objTicket, Formatting.Indented);
 
+            TextWriter writer;
+            using (writer = new StreamWriter(@"..\..\..\..\teste.json", append: false))
+            {
+                writer.WriteLine(json);
+            }
+
+            return true;
+
+        }
     }
 }

@@ -12543,11 +12543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\WEB-API\\WEB-API.csproj",
+      "projectUniqueName": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Desafio\\WEB-API\\WEB-API.csproj",
       "projectName": "WEB-API",
-      "projectPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\WEB-API\\WEB-API.csproj",
+      "projectPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Desafio\\WEB-API\\WEB-API.csproj",
       "packagesPath": "C:\\Users\\Ygor Basilio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\WEB-API\\obj\\",
+      "outputPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Desafio\\WEB-API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

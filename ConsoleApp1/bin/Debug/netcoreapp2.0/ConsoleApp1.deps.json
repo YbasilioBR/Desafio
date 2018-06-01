@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.0": {
       "ConsoleApp1/1.0.0": {
         "dependencies": {
-          "Util": "1.0.0"
+          "Util": "1.0.0",
+          "Newtonsoft.Json": "11.0.0.0"
         },
         "runtime": {
           "ConsoleApp1.dll": {}
@@ -17,6 +18,11 @@
       "Util/1.0.0": {
         "runtime": {
           "Util.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.0.0": {
+        "runtime": {
+          "Newtonsoft.Json.dll": {}
         }
       }
     }
@@ -29,6 +35,11 @@
     },
     "Util/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/11.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

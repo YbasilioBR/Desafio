@@ -19,7 +19,6 @@ namespace DesafioNeoAssist.Controllers
             var ticket = new List<Ticket>();
             Ticket classe = new Ticket();
 
-            ticket = classe.RetornaTickets();
 
             return "";
 

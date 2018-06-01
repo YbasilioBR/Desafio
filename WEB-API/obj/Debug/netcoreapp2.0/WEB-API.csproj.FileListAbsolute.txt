@@ -9,3 +9,6 @@ C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\obj\Debug
 C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\obj\Debug\netcoreapp2.0\WEB-API.AssemblyInfo.cs
 C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\obj\Debug\netcoreapp2.0\WEB-API.dll
 C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\obj\Debug\netcoreapp2.0\WEB-API.pdb
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\WEB-API\obj\Debug\netcoreapp2.0\WEB-API.csproj.CoreCompileInputs.cache
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\WEB-API\obj\Debug\netcoreapp2.0\WEB-API.AssemblyInfoInputs.cache
+C:\Users\Ygor Basilio\Documents\Projetos .NET - Off\Desafio\Desafio\WEB-API\obj\Debug\netcoreapp2.0\WEB-API.AssemblyInfo.cs
