@@ -9,7 +9,7 @@ namespace Util
 {
     public class Core
     {
-        public void ClassificaTickets()
+        public bool ClassificaTickets()
         {
             Ticket classe = new Ticket();
             var ticketsClassificados = new List<Ticket>();
@@ -72,7 +72,10 @@ namespace Util
 
             }
 
+
             classe.GravaTickets(ticketsClassificados);
+
+            return true;
         }
     }
 }

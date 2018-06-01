@@ -6,23 +6,27 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using DesafioNeoAssist.Models;
+using Util;
 
 namespace DesafioNeoAssist.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        // GET api/values
+
         [HttpGet]
-        public string Get()
+        public IEnumerable<string> Get()
         {
-            var ticket = new List<Ticket>();
-            Ticket classe = new Ticket();
-
-
-            return "";
-
+            return new string[] { "value1", "value2" };
         }
+
+        // GET api/values
+     /*   [HttpGet]
+        public void Get()
+        {
+            
+
+        }*/
 
         // GET api/values/5
         [HttpGet("{id}")]

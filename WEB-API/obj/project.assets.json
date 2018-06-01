@@ -4746,6 +4746,15 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Util/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Util.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Util.dll": {}
+        }
       }
     }
   },
@@ -12527,13 +12536,19 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Util/1.0.0": {
+      "type": "project",
+      "path": "../Util/Util.csproj",
+      "msbuildProject": "../Util/Util.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.6",
       "Microsoft.NETCore.App >= 2.0.0",
-      "System.IO >= 4.3.0"
+      "System.IO >= 4.3.0",
+      "Util >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12565,7 +12580,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Desafio\\Util\\Util.csproj": {
+              "projectPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Desafio\\Util\\Util.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
