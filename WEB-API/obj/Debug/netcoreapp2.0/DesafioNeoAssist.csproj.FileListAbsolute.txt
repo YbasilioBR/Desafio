@@ -1,0 +1,11 @@
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\DesafioNeoAssist\bin\Debug\netcoreapp2.0\DesafioNeoAssist.deps.json
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\DesafioNeoAssist\bin\Debug\netcoreapp2.0\DesafioNeoAssist.runtimeconfig.json
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\DesafioNeoAssist\bin\Debug\netcoreapp2.0\DesafioNeoAssist.runtimeconfig.dev.json
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\DesafioNeoAssist\bin\Debug\netcoreapp2.0\DesafioNeoAssist.dll
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\DesafioNeoAssist\bin\Debug\netcoreapp2.0\DesafioNeoAssist.pdb
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\DesafioNeoAssist\obj\Debug\netcoreapp2.0\DesafioNeoAssist.csprojResolveAssemblyReference.cache
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\DesafioNeoAssist\obj\Debug\netcoreapp2.0\DesafioNeoAssist.csproj.CoreCompileInputs.cache
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\DesafioNeoAssist\obj\Debug\netcoreapp2.0\DesafioNeoAssist.AssemblyInfoInputs.cache
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\DesafioNeoAssist\obj\Debug\netcoreapp2.0\DesafioNeoAssist.AssemblyInfo.cs
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\DesafioNeoAssist\obj\Debug\netcoreapp2.0\DesafioNeoAssist.dll
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\DesafioNeoAssist\obj\Debug\netcoreapp2.0\DesafioNeoAssist.pdb
