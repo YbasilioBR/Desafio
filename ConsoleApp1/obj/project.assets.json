@@ -685,11 +685,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Desafio\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Desafio\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\Ygor Basilio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Desafio\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -708,8 +708,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Desafio\\Util\\Util.csproj": {
-              "projectPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Desafio\\Util\\Util.csproj"
+            "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\Util\\Util.csproj": {
+              "projectPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\Util\\Util.csproj"
             }
           }
         }

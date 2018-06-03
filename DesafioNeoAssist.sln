@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB-API", "WEB-API\WEB-API.csproj", "{378A16F4-C4B1-4DB3-AEAA-A801F6F278DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_API", "WEB-API\WEB_API.csproj", "{378A16F4-C4B1-4DB3-AEAA-A801F6F278DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{571938E0-474B-44F2-B679-E9B69582A647}"
 	ProjectSection(SolutionItems) = preProject

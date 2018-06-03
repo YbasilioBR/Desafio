@@ -45,7 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Ticket.cs" />
+    <Compile Include="Classes\ITicketUtil.cs" />
+    <Compile Include="Classes\TicketRepositoryUtil.cs" />
+    <Compile Include="Classes\TicketUtil.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

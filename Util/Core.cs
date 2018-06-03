@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,13 @@ namespace Util
 {
     public class Core
     {
-        public bool ClassificaTickets()
+        static readonly ITicketUtil repositorio = new TicketRepositoryUtil();
+
+        public void ClassificaTickets()
         {
-            Ticket classe = new Ticket();
-            var ticketsClassificados = new List<Ticket>();
-            List<Ticket> ticket = new List<Ticket>();
-            ticket = classe.RetornaTickets();
+            var ticketsClassificados = new List<TicketUtil>();
+            List<TicketUtil> ticket = new List<TicketUtil>();
+            ticket = repositorio.RetornaTickets();
 
             foreach (var listaAnalisada in ticket)
             {
@@ -72,10 +74,8 @@ namespace Util
 
             }
 
-
-            classe.GravaTickets(ticketsClassificados);
-
-            return true;
+            repositorio.GravaTickets(ticketsClassificados);
+            
         }
     }
 }

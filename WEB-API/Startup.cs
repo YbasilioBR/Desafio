@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Util;
 
 namespace DesafioNeoAssist
 {
@@ -26,15 +27,16 @@ namespace DesafioNeoAssist
             services.AddMvc();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(
+            IApplicationBuilder app,
+            IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
+            app.UseMvc(routes =>
             {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.UseMvc();
+                    routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Ticket}/{action=GetAllTickets}");
+            });
         }
     }
 }

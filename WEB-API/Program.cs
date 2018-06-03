@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Util;
 
 namespace DesafioNeoAssist
 {
@@ -14,12 +15,16 @@ namespace DesafioNeoAssist
     {
         public static void Main(string[] args)
         {
+            Core core = new Core();
+            core.ClassificaTickets();
             BuildWebHost(args).Run();
+
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .Build();
+
     }
 }

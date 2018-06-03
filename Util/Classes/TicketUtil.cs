@@ -10,7 +10,7 @@ using System.Web.Script.Serialization;
 
 namespace Util.Classes
 {
-    class Ticket
+    class TicketUtil
     {
         [JsonProperty("TicketID")]
         public long TicketId { get; set; }
@@ -38,30 +38,6 @@ namespace Util.Classes
 
         [JsonProperty("Priority")]
         public string Priority { get; set; }
-
-
-        public List<Ticket> RetornaTickets()
-        {
-            var webClient = new WebClient();
-            var json = webClient.DownloadString(@"..\..\..\..\tickets.json");
-            var result = JsonConvert.DeserializeObject<List<Ticket>>(json);
-
-            return result;
-
-        }
-
-        public bool GravaTickets(List<Ticket> objTicket)
-        {
-            var json = JsonConvert.SerializeObject(objTicket, Formatting.Indented);
-
-            TextWriter writer;
-            using (writer = new StreamWriter(@"..\..\..\..\teste.json", append: false))
-            {
-                writer.WriteLine(json);
-            }
-
-            return true;
-
-        }
+      
     }
 }

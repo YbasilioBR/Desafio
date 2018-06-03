@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Util;
 
-namespace DesafioNeoAssist.Models
+namespace WEB_API.Models
 {
     public class Ticket
     {
@@ -32,6 +33,9 @@ namespace DesafioNeoAssist.Models
 
         [JsonProperty("Interactions")]
         public object Interactions { get; set; }
+
+        [JsonProperty("Priority")]
+        public string Priority { get; set; }
 
     }
 }

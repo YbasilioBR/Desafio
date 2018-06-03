@@ -1,0 +1,14 @@
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\obj\Debug\netcoreapp2.0\WEB_API.csprojResolveAssemblyReference.cache
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\obj\Debug\netcoreapp2.0\WEB_API.csproj.CoreCompileInputs.cache
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\obj\Debug\netcoreapp2.0\WEB_API.AssemblyInfoInputs.cache
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\obj\Debug\netcoreapp2.0\WEB_API.AssemblyInfo.cs
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\bin\Debug\netcoreapp2.0\WEB_API.deps.json
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\bin\Debug\netcoreapp2.0\WEB_API.runtimeconfig.json
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\bin\Debug\netcoreapp2.0\WEB_API.runtimeconfig.dev.json
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\bin\Debug\netcoreapp2.0\WEB_API.dll
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\bin\Debug\netcoreapp2.0\WEB_API.pdb
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\bin\Debug\netcoreapp2.0\Util.dll
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\bin\Debug\netcoreapp2.0\Util.pdb
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\obj\Debug\netcoreapp2.0\WEB_API.csproj.CopyComplete
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\obj\Debug\netcoreapp2.0\WEB_API.dll
+C:\Users\Ygor Basilio\Documents\Projetos .NET\DesafioNeoAssist\WEB-API\obj\Debug\netcoreapp2.0\WEB_API.pdb
