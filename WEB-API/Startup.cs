@@ -27,15 +27,34 @@ namespace DesafioNeoAssist
             services.AddMvc();
         }
 
-        public void Configure(
-            IApplicationBuilder app,
-            IHostingEnvironment env)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            if (env.IsDevelopment())
+            {
+                app.UseMvc();
+                
+            }
+
             app.UseMvc(routes =>
             {
-                    routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Ticket}/{action=GetAllTickets}");
+                routes.MapRoute(
+                name: "ById",
+                template: "{Ticket}/{Get}/{id:int}",
+                defaults: new { controller = "Ticket", action = "Get" });
+
+                routes.MapRoute(
+                name: "OrderByCreate",
+                template: "{Ticket}/{GetByCreate}",
+                defaults: new { controller = "Ticket", action = "GetByCreate" });
+
+                routes.MapRoute(
+                name: "OrderByUpdate",
+                template: "{Ticket}/{GetByUpdate}",
+                defaults: new { controller = "Ticket", action = "GetByCreate" });
+
+                routes.MapRoute("default", "{controller=Home}/{action=Index}");
+
             });
         }
     }

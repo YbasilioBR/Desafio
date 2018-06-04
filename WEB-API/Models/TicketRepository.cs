@@ -12,7 +12,6 @@ namespace WEB_API.Models
     {
 
         private List<Ticket> Tickets = new List<Ticket>();
-        private int _nextId = 1;
 
         public TicketRepository()
         {
@@ -34,6 +33,7 @@ namespace WEB_API.Models
                     Priority = lista.Priority
                 });
 
+
             }
         }
         public Ticket Add(Ticket item)
@@ -42,7 +42,7 @@ namespace WEB_API.Models
             {
                 throw new ArgumentNullException("item");
             }
-            item.TicketId = _nextId++;
+            
             Tickets.Add(item);
             return item;
         }
@@ -50,6 +50,22 @@ namespace WEB_API.Models
         {
             return Tickets.Find(p => p.TicketId == id);
         }
+
+        public IEnumerable<Ticket> GetByCreate()
+        {
+            return Tickets.OrderBy(p => p.DateCreate);
+        }
+
+        public IEnumerable<Ticket> GetByUpdate()
+        {
+            return Tickets.OrderBy(p => p.DateUpdate);
+        }
+
+        public IEnumerable<Ticket> GetInDate(DateTimeOffset inicio , DateTimeOffset fim)
+        {
+            return Tickets.Where(p => p.DateCreate >= inicio && p.DateCreate <= fim );
+        }
+
         public IEnumerable<Ticket> GetAll()
         {
             return Tickets;

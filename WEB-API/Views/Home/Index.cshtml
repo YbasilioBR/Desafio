@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ASP.NET Web API</title>
+    <link href="../../Content/Site.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+                uri = "http://localhost:60523/api/Ticket",
+                $(document).ready(function () {
+                    $.getJSON(uri)
+                        .done(function (data) {
+                            $.each(data, function (key, item) {
+                                $('#chamados').append("<tr><td>" + item.TicketID +
+                                    "</td>" + "<td>" + item.CategoryID +
+                                    "</td>" + "<td>" + item.CustomerID +
+                                    "</td>" + "<td>" + item.CustomerName +
+                                    "</td>" + "<td>" + item.CustomerEmail +
+                                    "</td>" + "<td>" + item.DateCreate +
+                                    "</td>" + "<td>" + item.DateUpdate +
+                                    "</td>" + "<td>" + item.Interactions +
+                                    "</td>" + "<td>" + item.Priority +
+                                    "</td></tr>");
+                            });
+                        });
+                });  
+
+    </script>
+</head>
+<body id="body">
+    <div>
+        <h2>Chamados</h2>
+        <table id="chamados" cellpadding="2" cellspacing="2" border="1" style="width:auto">
+            <tr>
+                <td style="background-color: gray; color: white">Id</td>
+                <td style="background-color: gray; color: white">Categoria</td>
+                <td style="background-color: gray; color: white">Nº Cliente</td>
+                <td style="background-color: gray; color: white">Nome Cliente</td>
+                <td style="background-color: gray; color:white">Email Cliente</td>
+                <td style="background-color: gray; color:white">Data Abertura</td>
+                <td style="background-color: gray; color:white">Data Atualização</td>
+                <td style="background-color: gray; color:white">Histórico</td>
+                <td style="background-color: gray; color:white">Prioridade</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

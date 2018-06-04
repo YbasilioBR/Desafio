@@ -18,12 +18,31 @@ namespace WEB_API.Controllers
         static readonly ITicket repositorio = new TicketRepository();
 
         [HttpGet]
-        public IEnumerable<Ticket> GetAllTickets()
+        public IEnumerable<Ticket> GetAll()
         {
             return repositorio.GetAll();
         }
 
-        public Ticket GetTicket(int id)
+        [HttpGet("GetByCreate")]
+        public IEnumerable<Ticket> GetByCreate()
+        {
+            return repositorio.GetByCreate();
+        }
+
+        [HttpGet("GetByUpdate")]
+        public IEnumerable<Ticket> GetByUpdate()
+        {
+            return repositorio.GetByUpdate();
+        }
+
+        [HttpGet("GetInDate/{dateInit?}/{dateFinish?}")]
+        public IEnumerable<Ticket> GetInDate(DateTimeOffset dateInit, DateTimeOffset dateFisnish)
+        {
+            return repositorio.GetInDate(dateInit, dateFisnish);
+        }
+
+        [HttpGet("{id}")]
+        public Ticket Get(int id)
         {
             Ticket item = repositorio.Get(id);
             if (item == null)
