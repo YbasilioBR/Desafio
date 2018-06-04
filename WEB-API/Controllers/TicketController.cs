@@ -58,14 +58,6 @@ namespace WEB_API.Controllers
             return item;
         }
 
-
-        /* public IEnumerable<Ticket> GetTicketsPorCategoria(string categoria)
-         {
-             return repositorio.GetAll().Where(
-                 p => string.Equals(p.CategoryId, categoria, StringComparison.OrdinalIgnoreCase));
-         }*/
-
-
         public bool PostTicket(Ticket item)
         {
             item = repositorio.Add(item);

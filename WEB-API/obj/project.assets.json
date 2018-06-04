@@ -9545,11 +9545,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\WEB-API\\WEB_API.csproj",
+      "projectUniqueName": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\WEB-API\\WEB_API.csproj",
       "projectName": "WEB_API",
-      "projectPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\WEB-API\\WEB_API.csproj",
+      "projectPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\WEB-API\\WEB_API.csproj",
       "packagesPath": "C:\\Users\\Ygor Basilio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\WEB-API\\obj\\",
+      "outputPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\WEB-API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9568,8 +9568,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\Util\\Util.csproj": {
-              "projectPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET\\DesafioNeoAssist\\Util\\Util.csproj"
+            "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Util\\Util.csproj": {
+              "projectPath": "C:\\Users\\Ygor Basilio\\Documents\\Projetos .NET - Off\\Desafio\\Util\\Util.csproj"
             }
           }
         }

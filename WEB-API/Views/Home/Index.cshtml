@@ -2,7 +2,19 @@
 <html lang="en">
 <head>
     <title>ASP.NET Web API</title>
-    <link href="../../Content/Site.css" rel="stylesheet" />
+    <style>
+
+        #cab {
+            background-color: gray; 
+            color: white;
+            font-family:Arial
+        }
+
+        #chamados td{
+            font-family:Arial;
+        }
+
+    </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
@@ -18,19 +30,20 @@
                                     "</td>" + "<td>" + item.CustomerID +
                                     "</td>" + "<td>" + item.CustomerName +
                                     "</td>" + "<td>" + item.CustomerEmail +
-                                    "</td>" + "<td>" + item.DateCreate +
+                                    "</td>" + "<td id=datacria>" + item.DateCreate +
                                     "</td>" + "<td>" + item.DateUpdate +
-                                    "</td>" + "<td>" + item.Interactions +
                                     "</td>" + "<td>" + item.Priority +
-                                    "</td></tr>");
+                                    "</td></tr>"
+                                );
                             });
+
                         });
                     $("select").change(function () {
                         if ($(this).find(":selected").val() == "Data Criação") {
                             $.getJSON("http://localhost:60523/api/Ticket/GetByCreate")
                                 .done(function (data) {
                                     $("#chamados tr").remove();
-                                    $('#chamados').append("<tr>" +
+                                    $('#chamados').append("<tr id=cab>" +
                                         "<td> Id</td >" +
                                         "<td>Categoria</td>" +
                                         "<td>Nº Cliente</td>" +
@@ -38,7 +51,6 @@
                                         "<td>Email Cliente</td>" +
                                         "<td>Data Abertura</td>" +
                                         "<td>Data Atualização</td>" +
-                                        "<td>Histórico</td>" +
                                         "<td>Prioridade</td>" +
                                         "</tr >")
                                     $.each(data, function (key, item) {
@@ -49,7 +61,6 @@
                                             "</td>" + "<td>" + item.CustomerEmail +
                                             "</td>" + "<td>" + item.DateCreate +
                                             "</td>" + "<td>" + item.DateUpdate +
-                                            "</td>" + "<td>" + item.Interactions +
                                             "</td>" + "<td>" + item.Priority +
                                             "</td></tr>");
                                     });
@@ -59,7 +70,7 @@
                             $.getJSON("http://localhost:60523/api/Ticket/GetByUpdate")
                                 .done(function (data) {
                                     $("#chamados tr").remove();
-                                    $('#chamados').append("<tr>" +
+                                    $('#chamados').append("<tr id=cab>" +
                                         "<td> Id</td >" +
                                         "<td>Categoria</td>" +
                                         "<td>Nº Cliente</td>" +
@@ -67,7 +78,6 @@
                                         "<td>Email Cliente</td>" +
                                         "<td>Data Abertura</td>" +
                                         "<td>Data Atualização</td>" +
-                                        "<td>Histórico</td>" +
                                         "<td>Prioridade</td>" +
                                         "</tr >")
                                     $.each(data, function (key, item) {
@@ -88,7 +98,7 @@
                             $.getJSON("http://localhost:60523/api/Ticket/GetByPriority")
                                 .done(function (data) {
                                     $("#chamados tr").remove();
-                                    $('#chamados').append("<tr>" +
+                                    $('#chamados').append("<tr id=cab>" +
                                         "<td> Id</td >" +
                                         "<td>Categoria</td>" +
                                         "<td>Nº Cliente</td>" +
@@ -96,7 +106,6 @@
                                         "<td>Email Cliente</td>" +
                                         "<td>Data Abertura</td>" +
                                         "<td>Data Atualização</td>" +
-                                        "<td>Histórico</td>" +
                                         "<td>Prioridade</td>" +
                                         "</tr >")
                                     $.each(data, function (key, item) {
@@ -107,7 +116,6 @@
                                             "</td>" + "<td>" + item.CustomerEmail +
                                             "</td>" + "<td>" + item.DateCreate +
                                             "</td>" + "<td>" + item.DateUpdate +
-                                            "</td>" + "<td>" + item.Interactions +
                                             "</td>" + "<td>" + item.Priority +
                                             "</td></tr>");
                                     });
@@ -126,7 +134,7 @@
                         $.getJSON(uri)
                             .done(function (data) {
                                 $("#chamados tr").remove();
-                                $('#chamados').append("<tr>" +
+                                $('#chamados').append("<tr id=cab>" +
                                     "<td> Id</td >" +
                                     "<td>Categoria</td>" +
                                     "<td>Nº Cliente</td>" +
@@ -134,7 +142,6 @@
                                     "<td>Email Cliente</td>" +
                                     "<td>Data Abertura</td>" +
                                     "<td>Data Atualização</td>" +
-                                    "<td>Histórico</td>" +
                                     "<td>Prioridade</td>" +
                                     "</tr >")
                                 $.each(data, function (key, item) {
@@ -145,7 +152,6 @@
                                         "</td>" + "<td>" + item.CustomerEmail +
                                         "</td>" + "<td>" + item.DateCreate +
                                         "</td>" + "<td>" + item.DateUpdate +
-                                        "</td>" + "<td>" + item.Interactions +
                                         "</td>" + "<td>" + item.Priority +
                                         "</td></tr>");
                                 });
@@ -171,27 +177,29 @@
                 <option>Prioridade</option>
             </select>
         </div>
-            <br />
-            <div style="display:inline-block; margin-bottom:15px">
-                <label>De: </label>
-                <input type="date" id="Inicial" value="2017-12-01">
-                <label>Até: </label>
-                <input type="date" id="Final" value="2018-01-31">
-                <input type="button" id="filtrar" value="Filtrar" />
-            </div>
-            <table id="chamados" cellpadding="2" cellspacing="2" border="1" style="width:auto">
-                <tr>
-                    <td style="background-color: gray; color: white">Id</td>
-                    <td style="background-color: gray; color: white">Categoria</td>
-                    <td style="background-color: gray; color: white">Nº Cliente</td>
-                    <td style="background-color: gray; color: white">Nome Cliente</td>
-                    <td style="background-color: gray; color:white">Email Cliente</td>
-                    <td style="background-color: gray; color:white">Data Abertura</td>
-                    <td style="background-color: gray; color:white">Data Atualização</td>
-                    <td style="background-color: gray; color:white">Histórico</td>
-                    <td style="background-color: gray; color:white">Prioridade</td>
-                </tr>
-            </table>
+        <br />
+        <div style="display:inline-block; margin-bottom:15px">
+            <label>De: </label>
+            <input type="date" id="Inicial" value="2017-12-01">
+            <label>Até: </label>
+            <input type="date" id="Final" value="2018-01-31">
+            <input type="button" id="filtrar" value="Filtrar" />
         </div>
+        <table id="chamados" cellpadding="2" cellspacing="2" border="1" style="width:auto">
+            <tr id=cab>
+                <td>Id</td>
+                <td>Categoria</td>
+                <td>Nº Cliente</td>
+                <td>Nome Cliente</td>
+                <td>Email Cliente</td>
+                <td>Data Abertura</td>
+                <td>Data Atualização</td>
+                <td>Prioridade</td>
+            </tr>
+        </table>
+
+        <ul id="result">
+        </ul>
+    </div>
 </body>
 </html>

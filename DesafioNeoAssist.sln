@@ -11,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		tickets.json = tickets.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{3E009454-05D8-4372-838A-3E73D531BCD7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{53F6BEFA-D098-4406-AE8F-9A8E8EA3BDE4}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{378A16F4-C4B1-4DB3-AEAA-A801F6F278DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{378A16F4-C4B1-4DB3-AEAA-A801F6F278DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{378A16F4-C4B1-4DB3-AEAA-A801F6F278DA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E009454-05D8-4372-838A-3E73D531BCD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E009454-05D8-4372-838A-3E73D531BCD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E009454-05D8-4372-838A-3E73D531BCD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E009454-05D8-4372-838A-3E73D531BCD7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{53F6BEFA-D098-4406-AE8F-9A8E8EA3BDE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{53F6BEFA-D098-4406-AE8F-9A8E8EA3BDE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53F6BEFA-D098-4406-AE8F-9A8E8EA3BDE4}.Release|Any CPU.ActiveCfg = Release|Any CPU

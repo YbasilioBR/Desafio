@@ -5,9 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DAL\" />
-    <Folder Include="Scripts\" />
-    <Folder Include="wwwroot\" />
+    <Compile Remove="DAL\**" />
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="DAL\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="DAL\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="DAL\**" />
+    <None Remove="wwwroot\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +32,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Util\Util.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Scripts\" />
   </ItemGroup>
 
 </Project>
