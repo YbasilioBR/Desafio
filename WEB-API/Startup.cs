@@ -51,7 +51,18 @@ namespace DesafioNeoAssist
                 routes.MapRoute(
                 name: "OrderByUpdate",
                 template: "{Ticket}/{GetByUpdate}",
-                defaults: new { controller = "Ticket", action = "GetByCreate" });
+                defaults: new { controller = "Ticket", action = "GetByUpdate" });
+
+                routes.MapRoute(
+                name: "OrderByPriority",
+                template: "{Ticket}/{GetByPriority}",
+                defaults: new { controller = "Ticket", action = "GetByPriority" });
+
+
+                routes.MapRoute(
+                name: "ByDate",
+                template: "{Ticket}/{GetInDate}/{Inicial}/{Final}",
+                defaults: new { controller = "Ticket", action = "GetInDate", Inicial = "", Final = "" });
 
                 routes.MapRoute("default", "{controller=Home}/{action=Index}");
 

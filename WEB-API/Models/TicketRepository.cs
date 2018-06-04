@@ -61,9 +61,14 @@ namespace WEB_API.Models
             return Tickets.OrderBy(p => p.DateUpdate);
         }
 
-        public IEnumerable<Ticket> GetInDate(DateTimeOffset inicio , DateTimeOffset fim)
+        public IEnumerable<Ticket> GetByPriority()
         {
-            return Tickets.Where(p => p.DateCreate >= inicio && p.DateCreate <= fim );
+            return Tickets.OrderBy(p => p.Priority);
+        }
+
+        public IEnumerable<Ticket> GetInDate(string inicio , string fim)
+        {
+            return Tickets.Where(p => p.DateCreate >= DateTimeOffset.Parse(inicio) && p.DateCreate <= DateTimeOffset.Parse(fim));
         }
 
         public IEnumerable<Ticket> GetAll()

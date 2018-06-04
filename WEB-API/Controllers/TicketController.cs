@@ -34,11 +34,17 @@ namespace WEB_API.Controllers
         {
             return repositorio.GetByUpdate();
         }
-
-        [HttpGet("GetInDate/{dateInit?}/{dateFinish?}")]
-        public IEnumerable<Ticket> GetInDate(DateTimeOffset dateInit, DateTimeOffset dateFisnish)
+        
+        [HttpGet("GetByPriority")]
+        public IEnumerable<Ticket> GetByPriority()
         {
-            return repositorio.GetInDate(dateInit, dateFisnish);
+            return repositorio.GetByPriority();
+        }
+
+        [HttpGet("GetInDate/{inicial}/{final}")]
+        public IEnumerable<Ticket> GetInDate(string inicial, string final)
+        {
+            return repositorio.GetInDate(inicial, final);
         }
 
         [HttpGet("{id}")]
